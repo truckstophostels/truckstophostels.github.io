@@ -1,1 +1,60 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dutch Monaco</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+    
+background: linear-gradient(216deg, #fd99e1, #aebcff);
+background-size: 400% 400%;
+
+-webkit-animation: animate 31s ease infinite;
+-moz-animation: animate 31s ease infinite;
+animation: animate 31s ease infinite;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.logo {
+  width: 300px;
+-webkit-filter: drop-shadow(0px 0px 25px rgba(0,0,0,0.1)); filter: drop-shadow(0px 0px 25px rgba(0,0,0,0.1));
+}
+
+@-webkit-keyframes animate {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@-moz-keyframes animate {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@keyframes animate { 
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<p><img class="logo" src="dutch-monaco.svg" alt="Dutch Monaco"></p>
+	</div>
+</body>
+</html>
